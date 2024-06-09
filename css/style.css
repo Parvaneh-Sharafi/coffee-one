@@ -1,0 +1,134 @@
+/*googele fonts link*/
+@import url("https://fonts.googleapis.com/css2?family=Righteous&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "inter", sans-serif;
+}
+
+/*Defining castome variables*/
+:root {
+  /*colors*/
+  --primary-color: #3b141c;
+  --secndary-color: #f3961c;
+  /* website max-width */
+  --site-max-width: 1300px;
+}
+
+/*setting for the whold website*/
+a {
+  text-decoration: none;
+}
+ul li {
+  list-style: none;
+}
+.button {
+  padding: 8px 28px;
+  border: 3px solid transparent;
+  outline: none;
+  cursor: pointer;
+  border-radius: 50px;
+  background: var(--secndary-color);
+  color: #fff;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.button:hover {
+  background: transparent;
+  border: 3px solid #fff;
+}
+
+.section-container {
+  width: var(--site-max-width);
+  margin: 0 auto;
+}
+
+/*styling for the header section*/
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 80px;
+  z-index: 1;
+  background: var(--primary-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+nav {
+  width: var(--site-max-width);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav .nav-logo a {
+  display: flex;
+  align-items: center;
+}
+
+nav .nav-logo h2 {
+  font-size: 32px;
+  color: #fff;
+}
+
+nav ul {
+  display: flex;
+  gap: 10px;
+}
+
+nav ul li {
+  padding: 12px 32px;
+
+  border-radius: 50px;
+  cursor: pointer;
+}
+
+nav ul li:hover {
+  background-color: var(--secndary-color);
+}
+
+nav ul li a {
+  font-size: 18px;
+  font-weight: 600;
+  color: #fff;
+}
+
+/* hero section*/
+.hero-section {
+  margin-top: 88px;
+  background: var(--primary-color);
+  height: calc(100vh -80px);
+}
+.hero-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  align-items: center;
+}
+
+.hero-container .text-section h2 {
+  font-size: 40px;
+  color: var(--secndary-color);
+}
+
+.hero-container .text-section h3 {
+  font-size: 35px;
+  font-weight: 600;
+  color: #fff;
+  margin: 8px;
+}
+
+.hero-container .text-section p {
+  font-size: 20px;
+  font-weight: 600;
+  color: #fff;
+  margin: 24px 0;
+}
+
+.hero-container .text-section .hero-section-button {
+}
